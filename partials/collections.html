@@ -1,0 +1,10 @@
+<div class="widget-box" id="recent-box" ng-controller="CollectionsController">
+	<div class="widget-body">
+		<div class="collection-container">
+			<div class="collection" ng-repeat="collection in collections">
+				<a ng-href="{{collection.NAME}}.html">{{collection.NAME}}</a>
+				<p>owns {{collection.QUANTITY}} vinyl<span ng-if="!(collection.QUANTITY === '0')">s</span></p>
+			</div>
+		</div>
+	</div>
+</div>
